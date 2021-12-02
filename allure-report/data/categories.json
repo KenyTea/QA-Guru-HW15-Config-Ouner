@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unable to parse remote response: You are using Selenoid 1.10.3!",
+      "children" : [ {
+        "name" : "Lambda test",
+        "uid" : "74bb718a5ae749c6",
+        "parentUid" : "455ffb5ffc777edc6a9fb1390f6b2f6b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638167909540,
+          "stop" : 1638167911877,
+          "duration" : 2337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "455ffb5ffc777edc6a9fb1390f6b2f6b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

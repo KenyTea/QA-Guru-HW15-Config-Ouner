@@ -1,0 +1,42 @@
+{
+  "50f244a6a7c070993d4d5c26fa78346d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74bb718a5ae749c6",
+      "status" : "broken",
+      "statusDetails" : "Unable to parse remote response: You are using Selenoid 1.10.3!",
+      "time" : {
+        "start" : 1638167909540,
+        "stop" : 1638167911877,
+        "duration" : 2337
+      }
+    } ]
+  },
+  "c0e52da37a4d7990439bbd1dc686979a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27ed4c43c06842d8",
+      "status" : "skipped",
+      "statusDetails" : "void guru.qa.tests.properties.SystemPropertiesTest.someTest5() is @Disabled",
+      "time" : {
+        "start" : 1638167912011,
+        "stop" : 1638167912011,
+        "duration" : 0
+      }
+    } ]
+  }
+}

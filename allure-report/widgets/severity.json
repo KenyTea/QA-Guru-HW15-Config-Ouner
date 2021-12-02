@@ -1,0 +1,21 @@
+[ {
+  "uid" : "74bb718a5ae749c6",
+  "name" : "Lambda test",
+  "time" : {
+    "start" : 1638167909540,
+    "stop" : 1638167911877,
+    "duration" : 2337
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "27ed4c43c06842d8",
+  "name" : "someTest5()",
+  "time" : {
+    "start" : 1638167912011,
+    "stop" : 1638167912011,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

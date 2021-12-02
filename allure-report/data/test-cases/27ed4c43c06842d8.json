@@ -1,0 +1,68 @@
+{
+  "uid" : "27ed4c43c06842d8",
+  "name" : "someTest5()",
+  "fullName" : "guru.qa.tests.properties.SystemPropertiesTest.someTest5",
+  "historyId" : "c0e52da37a4d7990439bbd1dc686979a",
+  "time" : {
+    "start" : 1638167912011,
+    "stop" : 1638167912011,
+    "duration" : 0
+  },
+  "description" : "",
+  "status" : "skipped",
+  "statusMessage" : "void guru.qa.tests.properties.SystemPropertiesTest.someTest5() is @Disabled",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "properties"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:guru.qa.tests.properties.SystemPropertiesTest]/[method:someTest5()]"
+  }, {
+    "name" : "host",
+    "value" : "VAJAK"
+  }, {
+    "name" : "thread",
+    "value" : "4644@VAJAK.Test worker(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "guru.qa.tests.properties.SystemPropertiesTest"
+  }, {
+    "name" : "testClass",
+    "value" : "guru.qa.tests.properties.SystemPropertiesTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "someTest5"
+  }, {
+    "name" : "suite",
+    "value" : "guru.qa.tests.properties.SystemPropertiesTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "properties" ]
+  },
+  "source" : "27ed4c43c06842d8.json",
+  "parameterValues" : [ ]
+}

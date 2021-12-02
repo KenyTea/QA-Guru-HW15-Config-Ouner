@@ -1,0 +1,47 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "VAJAK",
+    "children" : [ {
+      "name" : "4644@VAJAK.Test worker(12)",
+      "children" : [ {
+        "name" : "someTest5()",
+        "uid" : "27ed4c43c06842d8",
+        "parentUid" : "3c03c4105cb26015728a383375f6639a",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1638167912011,
+          "stop" : 1638167912011,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Lambda test",
+        "uid" : "74bb718a5ae749c6",
+        "parentUid" : "3c03c4105cb26015728a383375f6639a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638167909540,
+          "stop" : 1638167911877,
+          "duration" : 2337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3c03c4105cb26015728a383375f6639a"
+    } ],
+    "uid" : "c3486822ac0b6f3e6138ee1c7a2326b4"
+  } ]
+}

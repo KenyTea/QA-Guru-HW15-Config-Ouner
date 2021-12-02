@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "4506ef119e89b11cf5eb8c6e2c3faa02",
+    "name" : "guru.qa.tests.HomeWork5_10",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e88e9efc1f1ef9319e5fe93ce70db8e2",
+    "name" : "guru.qa.tests.properties.SystemPropertiesTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

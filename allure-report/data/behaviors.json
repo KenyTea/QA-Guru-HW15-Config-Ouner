@@ -1,0 +1,47 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Заполнение регистрационной формы",
+    "children" : [ {
+      "name" : "Issues",
+      "children" : [ {
+        "name" : "Lambda test",
+        "uid" : "74bb718a5ae749c6",
+        "parentUid" : "e8c003fb00610842796946a3dce09a8a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638167909540,
+          "stop" : 1638167911877,
+          "duration" : 2337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e8c003fb00610842796946a3dce09a8a"
+    } ],
+    "uid" : "0b4ff004994de91c6b9af0c29617aadd"
+  }, {
+    "name" : "someTest5()",
+    "uid" : "27ed4c43c06842d8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1638167912011,
+      "stop" : 1638167912011,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  } ]
+}

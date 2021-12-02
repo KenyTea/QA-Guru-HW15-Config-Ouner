@@ -1,0 +1,51 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "guru.qa.tests",
+    "children" : [ {
+      "name" : "HomeWork5_10",
+      "children" : [ {
+        "name" : "studentsRegistration",
+        "uid" : "74bb718a5ae749c6",
+        "parentUid" : "0adca7648a050da2d1d62be7310b1f1b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1638167909540,
+          "stop" : 1638167911877,
+          "duration" : 2337
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0adca7648a050da2d1d62be7310b1f1b"
+    }, {
+      "name" : "properties.SystemPropertiesTest",
+      "children" : [ {
+        "name" : "someTest5",
+        "uid" : "27ed4c43c06842d8",
+        "parentUid" : "941327ca8e5d3a95d33a628c988ed993",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1638167912011,
+          "stop" : 1638167912011,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "properties.SystemPropertiesTest"
+    } ],
+    "uid" : "guru.qa.tests"
+  } ]
+}

@@ -17,6 +17,8 @@ import static io.qameta.allure.Allure.step;
 
 public class HomeWork5_10 extends TestBase {
 
+    // https://jenkins.autotests.cloud/job/QA.Guru9_HW12TelegramBot/
+
     private final String URL = "https://demoqa.com/automation-practice-form";
     private final String picture = "p1.png";
 

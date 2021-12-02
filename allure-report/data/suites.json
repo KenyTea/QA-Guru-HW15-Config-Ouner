@@ -1,0 +1,47 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "guru.qa.tests.HomeWork5_10",
+    "children" : [ {
+      "name" : "Lambda test",
+      "uid" : "74bb718a5ae749c6",
+      "parentUid" : "4506ef119e89b11cf5eb8c6e2c3faa02",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638167909540,
+        "stop" : 1638167911877,
+        "duration" : 2337
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4506ef119e89b11cf5eb8c6e2c3faa02"
+  }, {
+    "name" : "guru.qa.tests.properties.SystemPropertiesTest",
+    "children" : [ {
+      "name" : "someTest5()",
+      "uid" : "27ed4c43c06842d8",
+      "parentUid" : "e88e9efc1f1ef9319e5fe93ce70db8e2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638167912011,
+        "stop" : 1638167912011,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e88e9efc1f1ef9319e5fe93ce70db8e2"
+  } ]
+}

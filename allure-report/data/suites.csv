@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Nov 29 12:38:29 ALMT 2021","Mon Nov 29 12:38:31 ALMT 2021","2337","","guru.qa.tests.HomeWork5_10","","guru.qa.tests.HomeWork5_10","studentsRegistration","Lambda test",""
+"skipped","Mon Nov 29 12:38:32 ALMT 2021","Mon Nov 29 12:38:32 ALMT 2021","0","","guru.qa.tests.properties.SystemPropertiesTest","","guru.qa.tests.properties.SystemPropertiesTest","someTest5","someTest5()",""
