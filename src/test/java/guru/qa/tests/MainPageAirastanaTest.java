@@ -66,8 +66,8 @@ public class MainPageAirastanaTest extends TestBase {
             PASSENGER_TITLE = $(".passengerTitle");
     //endregion
 
-    private void openMainPageAirastana() {
-        open(URL);
+    private void openMainPageAirastana(String url) {
+        open(url);
         IARASTANA_LOGO.shouldBe(Condition.visible, Duration.ofSeconds(20));
     }
 
@@ -86,18 +86,24 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("Book and Manage")
     @Test
     void mainPageAirastanaBookAndManage() {
-        openMainPageAirastana();
-        BOOK_AND_MANAGE.click();
-        $("div.third-level-content").shouldBe(Condition.visible).click();
-        SPECIAN_OFFERS.shouldBe(Condition.visible).click();
-        FLIGHTS_FORE_KYEV.shouldBe(Condition.visible);
+        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
+            openMainPageAirastana(URL);
+        });
+        step("Переходим на стриницу Book and Manage " , () -> {
+            step("Прокликиваем Book and Manage " , () -> {
+                BOOK_AND_MANAGE.click();
+                $("div.third-level-content").shouldBe(Condition.visible).click();
+                SPECIAN_OFFERS.shouldBe(Condition.visible).click();
+                FLIGHTS_FORE_KYEV.shouldBe(Condition.visible);
+            });
+        });
     }
 
     @Tag("Information")
     @Test
     void mainPageAirastanaInformation() {
         step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana();
+            openMainPageAirastana(URL);
         });
         step("Переходим на стриницу Information " , () -> {
             step("Прокликиваем Information " , () -> {
@@ -115,7 +121,7 @@ public class MainPageAirastanaTest extends TestBase {
     @Test
     void mainPageAirastanaNomadClub() {
         step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana();
+            openMainPageAirastana(URL);
         });
         step("Переходим на стриницу Nomad Club " , () -> {
             step("Прокликиваем Nomad Club " , () -> {
@@ -134,7 +140,7 @@ public class MainPageAirastanaTest extends TestBase {
     @Test
     void mainPageAirastanaAboutUs() {
         step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana();
+            openMainPageAirastana(URL);
         });
         step("Переходим на стриницу About As ", () -> {
             step("Прокликиваем About As ", () -> {
@@ -156,7 +162,7 @@ public class MainPageAirastanaTest extends TestBase {
     @Test
     void mainPageAirastanaFlights() {
         step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana();
+            openMainPageAirastana(URL);
         });
         step("Заполняем форму ", () -> {
             step("Flights ", () -> {

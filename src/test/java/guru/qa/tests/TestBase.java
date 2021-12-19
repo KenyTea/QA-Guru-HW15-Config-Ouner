@@ -2,10 +2,8 @@ package guru.qa.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import guru.qa.components.RandomFaker;
 import guru.qa.config.CredentialsConfig;
 import guru.qa.helpers.Attach;
-import guru.qa.pages.RegistrationPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
@@ -15,9 +13,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static com.codeborne.selenide.Configuration.remote;
 
 public class TestBase {
-
-    public RegistrationPage registrationPage = new RegistrationPage();
-    public RandomFaker randomFaker = new RandomFaker();
 
     static CredentialsConfig credentials =
             ConfigFactory.create(CredentialsConfig.class);
@@ -31,8 +26,8 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
 
+        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub/";
         Configuration.remote = String.format("https://%s:%s@%s/wd/hub/", login, password, selenoidUrl);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
