@@ -23,8 +23,10 @@ import static org.openqa.selenium.By.xpath;
 @DisplayName("QA vacancy in AirAstana")
 public class MainPageAirastanaTest extends TestBase {
 
-    public String URL = "https://airastana.com/global/en-us/";
+    //public String URL = "https://airastana.com/global/en-us/";
+    String AirAstanaUrl = System.getProperty("airUrl", "https://airastana.com/global/en-us/");
 
+    //https://jenkins.autotests.cloud/job/QA.Guru9_HW13AirAstana/
     // Вакансия  https://hh.kz/employer/31453
 
     // region SelenideElement
@@ -86,8 +88,8 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("Book and Manage")
     @Test
     void mainPageAirastanaBookAndManage() {
-        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana(URL);
+        step("Заходим на главную страницу AirAstana: " + AirAstanaUrl + " ", () -> {
+            openMainPageAirastana(AirAstanaUrl);
         });
         step("Переходим на стриницу Book and Manage " , () -> {
             step("Прокликиваем Book and Manage " , () -> {
@@ -102,8 +104,8 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("Information")
     @Test
     void mainPageAirastanaInformation() {
-        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana(URL);
+        step("Заходим на главную страницу AirAstana: " + AirAstanaUrl + " ", () -> {
+            openMainPageAirastana(AirAstanaUrl);
         });
         step("Переходим на стриницу Information " , () -> {
             step("Прокликиваем Information " , () -> {
@@ -120,8 +122,8 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("Nomad Club")
     @Test
     void mainPageAirastanaNomadClub() {
-        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana(URL);
+        step("Заходим на главную страницу AirAstana: " + AirAstanaUrl + " ", () -> {
+            openMainPageAirastana(AirAstanaUrl);
         });
         step("Переходим на стриницу Nomad Club " , () -> {
             step("Прокликиваем Nomad Club " , () -> {
@@ -139,8 +141,8 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("About Us")
     @Test
     void mainPageAirastanaAboutUs() {
-        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana(URL);
+        step("Заходим на главную страницу AirAstana: " + AirAstanaUrl + " ", () -> {
+            openMainPageAirastana(AirAstanaUrl);
         });
         step("Переходим на стриницу About As ", () -> {
             step("Прокликиваем About As ", () -> {
@@ -161,8 +163,8 @@ public class MainPageAirastanaTest extends TestBase {
     @Tag("Flights")
     @Test
     void mainPageAirastanaFlights() {
-        step("Заходим на главную страницу AirAstana: " + URL + " ", () -> {
-            openMainPageAirastana(URL);
+        step("Заходим на главную страницу AirAstana: " + AirAstanaUrl + " ", () -> {
+            openMainPageAirastana(AirAstanaUrl);
         });
         step("Заполняем форму ", () -> {
             step("Flights ", () -> {
