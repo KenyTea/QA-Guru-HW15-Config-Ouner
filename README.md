@@ -60,10 +60,9 @@ Also gait can record video and take screenshots:
 
 ___
 
-
 ## Notifications in Telegram channel
 
-The project is configured to send notifications about the results of launches from Jenkins to Telegram channel
+After completion of the work, the project sends a notification to the Telegram channel
 
 <p align="center">
   <img src="forReadme/Telegram_example.png">
