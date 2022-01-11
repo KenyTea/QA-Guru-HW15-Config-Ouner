@@ -1,73 +1,25 @@
 plugins {
-    id 'java-library'
-    id 'io.qameta.allure' version '2.8.1'
+    id 'java'
 }
+
+group 'org.example'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.16.0",
-    selenideVersion = "5.24.0",
-    junitVersion = "5.8.1"
-
-allure {
-    version = allureVersion
-    autoconfigure = true
-    aspectjweaver = true
-    configuration = "testImplementation"
-    useJUnit5 {
-        version = allureVersion
-    }
-}
-
 dependencies {
     testImplementation(
-            "org.aspectj:aspectjweaver:1.9.7",
-            "com.codeborne:selenide:$selenideVersion",
-            "io.qameta.allure:allure-selenide:$allureVersion",
-            "com.github.javafaker:javafaker:1.0.2",
-            "org.aeonbits.owner:owner:1.0.12",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
-    testRuntimeOnly(
-            "org.slf4j:slf4j-simple:1.7.32",
-            "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+            'org.junit.jupiter:junit-jupiter-api:5.8.2',
+            'org.seleniumhq.selenium:selenium-java:3.141.59',
+            'org.aeonbits.owner:owner:1.0.4',
+            'org.assertj:assertj-core:3.21.0',
+    )
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.2')
 }
 
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-tasks.withType(Test) {
-    //systemProperty("browserSize", System.property("browserSize", "400 400")) // Можно задавать здесь
-    systemProperties(System.getProperties()) // Запустить с параметрами
+test {
     useJUnitPlatform()
-
-    testLogging {
-        lifecycle {
-//            events "started", "failed"
-            events "started", "skipped", "failed", "standard_error", "standard_out"
-            exceptionFormat "short"
-        }
-    }
+    systemProperties(System.getProperties())
 }
-
-//task properties_test(type: Test){  // Запускать только с @Tag("properties")
-//    useJUnitPlatform{
-//        includeTags "properties"
-//    }
-//}
-//
-//task lambda_test(type: Test){  // Запускать только с @Tag("properties")
-//    useJUnitPlatform{
-//        includeTags "Lambda test"
-//    }
-//}
-
-//task many_test(type: Test){  // Запускать несколько тестов с @Tag("properties") @Tag("testss")
-//    useJUnitPlatform{
-//        includeTags "properties"
-//        includeTags "testss"
-//        excludeTags "Prod"
-//    }
-//}
